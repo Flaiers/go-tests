@@ -11,5 +11,5 @@ func get(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", get)
-	http.ListenAndServe(":8000", nil)
+	http.ListenAndServe("0.0.0.0:8000", nil)
 }
