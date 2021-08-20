@@ -50,11 +50,11 @@ Result:
 Running 2m test @ http://127.0.0.1:8000
   4 threads and 200 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     3.96ms    5.12ms 128.98ms   87.54%
-    Req/Sec    18.62k     4.48k   37.91k    68.42%
-  8894634 requests in 2.00m, 1.08GB read
-Requests/sec:  74077.34
-Transfer/sec:      9.18MB
+    Latency     3.69ms    4.66ms 101.23ms   87.59%
+    Req/Sec    19.18k     3.19k   33.45k    69.76%
+  9162924 requests in 2.00m, 1.11GB read
+Requests/sec:  76299.02
+Transfer/sec:      9.46MB
 ```
 
 &nbsp;
@@ -81,4 +81,28 @@ Running 2m test @ http://127.0.0.1:8000
   9417494 requests in 2.00m, 1.14GB read
 Requests/sec:  78417.86
 Transfer/sec:      9.72MB
+```
+
+&nbsp;
+
+Echo
+----
+
+I run:
+
+```bash
+go run src/main.go
+```
+
+Result:
+
+```
+Running 2m test @ http://127.0.0.1:8000
+  4 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.95ms    4.99ms  99.07ms   88.04%
+    Req/Sec    17.89k     3.11k   40.05k    72.45%
+  8545856 requests in 2.00m, 1.03GB read
+Requests/sec:  71180.59
+Transfer/sec:      8.82MB
 ```
