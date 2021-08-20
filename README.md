@@ -106,3 +106,27 @@ Running 2m test @ http://127.0.0.1:8000
 Requests/sec:  71180.59
 Transfer/sec:      8.82MB
 ```
+
+&nbsp;
+
+Iris
+----
+
+I run:
+
+```bash
+go run src/main.go
+```
+
+Result:
+
+```
+Running 2m test @ http://127.0.0.1:8000
+  4 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.03ms    5.19ms  97.29ms   87.47%
+    Req/Sec    18.02k     3.53k   33.11k    70.70%
+  8610067 requests in 2.00m, 1.04GB read
+Requests/sec:  71693.01
+Transfer/sec:      8.89MB
+```
