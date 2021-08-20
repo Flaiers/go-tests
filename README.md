@@ -1,8 +1,6 @@
 Go language tests
 =================
 
-Use tests
----------
 ### Install Go
 
 Described in this repository: [Flaiers/the-go](https://github.com/Flaiers/the-go)
@@ -57,4 +55,30 @@ Running 2m test @ http://127.0.0.1:8000
   8894634 requests in 2.00m, 1.08GB read
 Requests/sec:  74077.34
 Transfer/sec:      9.18MB
+```
+
+&nbsp;
+
+Gin
+---
+### Easy requests, no db
+
+I run:
+
+```bash
+go get -u github.com/gin-gonic/gin ; \
+go run src/main.go
+```
+
+Result:
+
+```
+Running 2m test @ http://127.0.0.1:8000
+  4 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.93ms    5.21ms  85.09ms   87.62%
+    Req/Sec    19.71k     3.74k   42.56k    69.34%
+  9417494 requests in 2.00m, 1.14GB read
+Requests/sec:  78417.86
+Transfer/sec:      9.72MB
 ```
