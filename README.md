@@ -130,3 +130,28 @@ Running 2m test @ http://127.0.0.1:8000
 Requests/sec:  71693.01
 Transfer/sec:      8.89MB
 ```
+
+&nbsp;
+
+Beego
+------
+
+I run:
+
+```bash
+go build -o core main.go ; \
+./core
+```
+
+Result:
+
+```
+Running 2m test @ http://127.0.0.1:8000
+  4 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.23ms    5.62ms  93.06ms   88.14%
+    Req/Sec    18.16k     2.98k   45.97k    69.46%
+  8672630 requests in 2.00m, 1.05GB read
+Requests/sec:  72218.26
+Transfer/sec:      8.95MB
+```
